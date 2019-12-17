@@ -9,10 +9,19 @@
 </head>
 
 <body>
-
     <script>
-        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-        let voewls = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        let vowels = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"];
+        let coordinates = [];
+
+        let naval = () => {
+            for (let i = 0; i < vowels.length; i++) {
+                for (let a = 0; a < numbers.length; a++) {
+                    coordinates.push(vowels[i] + "-" + numbers[a])
+                }
+            }
+            return (coordinates)
+        }
     </script>
 </body>
 

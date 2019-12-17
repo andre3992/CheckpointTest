@@ -10,11 +10,16 @@
 
 <body>
     <script>
-        let num = [];
+        function sortNumber(a, b) {
+            return a - b;
+        }
         checkNumber = (num) => {
-            for (let i = 0; i < num.lenght; i++) {
+            let result = [];
+            num.sort(sortNumber);
+            result.push(num[0])
+            result.push(num[num.length - 1])
+            return (result)
 
-            }
         }
     </script>
 </body>
